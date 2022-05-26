@@ -17,7 +17,6 @@ initialModel =
 
 type Msg
     = Increment
-    | Decrement
 
 
 update : Msg -> Model -> Model
@@ -26,17 +25,10 @@ update msg model =
         Increment ->
             { model | count = model.count + 1 }
 
-        Decrement ->
-            { model | count = model.count - 1 }
-
 
 view : Model -> Html Msg
 view model =
-    div [class "btn-group"]
-        [ button [ class "btn btn-lg", onClick Increment ] [ text "+1" ]
-        , div [] [ text <| String.fromInt model.count ]
-        , button [ class "btn btn-lg", onClick Decrement ] [ text "-1" ]
-        ]
+    div [class "btn-group"] []
 
 
 main : Program () Model Msg

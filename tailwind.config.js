@@ -12,7 +12,8 @@ module.exports = {
   },
   daisyui: {
     themes: [
-      "halloween",
+      "forest",
+      "lemonade",
     ]
   },
   variants: {
